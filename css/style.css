@@ -1,0 +1,526 @@
+@font-face {
+    font-family: firesans;
+    src: url(/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: firesans bol;
+    src: url(/Fira_Sans/FiraSans-Bold.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: firesans ;
+}
+
+header{
+    max-width: 1200px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    flex-wrap: wrap;
+}
+
+.link{
+    list-style: none;
+    display: flex;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    margin-right: 35px;
+    font-size: 1.2rem;
+}
+
+.introducao{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 100px;
+    
+    
+}
+
+.cover{
+    max-width: 360px;
+}
+
+.introducao img{
+    max-width: 100%;
+    
+}
+
+.introducao-funcao h1{
+    font-size: 4.5rem;
+    max-width: 14ch;
+    margin: 0px;
+    position: relative;
+    font-family: firesans bol ;
+}
+
+.introducao-funcao h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 120px;
+    background-image: url(/img/detalhe.svg) ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    z-index: -1;
+}
+
+.introducao-funcao p{
+    font-size: 1.5rem;
+    color: #000000ad;
+}
+
+.experiencia{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    gap: 100px;
+    
+}
+
+.titulo{
+    max-width: 3ch;
+    font-size: 9rem;
+    word-break: break-all;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.151);
+    margin-top: 10px;
+    font-family: firesans bol;
+}
+
+
+.projetos {
+    max-width: 40ch;
+    font-size: 1.54rem;
+    color: #000000ad;
+}
+
+.projetos strong{
+    color: black;
+}
+
+.experiencia-proj{
+    margin: 80px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.experiencia-conteudo{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.experiencia-conteudo span {
+    font-size: 0.9rem;
+    position: absolute;
+    left: -70px;
+    top: 20px;
+    color: #000000ad;
+
+}
+
+.data::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    left: 48px;
+    bottom: 0.0px;
+}
+
+#data2{
+    left: -90px;
+    
+}
+
+#data2::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    left: 68px;
+    bottom: 0.0px;
+}
+
+.titulo-exp {
+    font-size: 1.2rem;
+    
+}
+
+
+.experiencia-proj p  {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.experiencia-cargo{
+    margin-left: 10px;
+}
+
+.habilidades{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-left: 10px;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.habilidades li{
+    font-size: 0.9rem;
+}
+
+.formacao-bg{
+    background-color: rgb(15, 15, 15);
+    padding-bottom: 50px;
+}
+
+.formacao{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+.titulo-form{
+    max-width: 4ch;
+    font-size: 9rem;
+    word-break: break-all;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1 ;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.mestrado{
+    max-width: 40ch;
+    font-size: 1.54rem;
+    color: rgba(255, 255, 255, 0.452);
+    margin-bottom: 60px;
+}
+
+.mestrado strong{
+    color: white;
+}
+
+.quadro{
+    display: flex;
+    gap: 20px;
+}
+
+.quadro-cursos{
+    flex: 1;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    position: relative
+}
+
+.quadro-cursos h2::after{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    left: -5px;
+    top: 50px;
+}
+
+.quadro h2{
+    color:rgba(255, 255, 255, 0.452);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.quadro p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.quadro span{
+    color: rgba(255, 255, 255, 0.452);
+    font-size: 1.3rem;
+    
+}
+
+.formacao-avancado{
+    margin-top: 55px;
+    
+}
+
+.formacao-avancado h2{
+    color: #ffffffa4;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formacao-avancado h2::before {
+    content: "";
+    background-image: url(/img/cursos.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -40px;
+    top: -5px;
+}
+
+.formacao-horas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacao-horas p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 8px 0px;
+}
+
+.formacao-horas span{
+    color: #ffffff85;
+    margin-top: 15px;
+}
+
+.formacao-idioma{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.formacao-idioma h2{
+    color: #ffffffa4;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.formacao-idioma h2::before{
+    content: "";
+    background-image: url(/img/idiomas.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -40px;
+    top: -4px;
+}
+
+.idiomas-nivel p{
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+.idiomas-nivel span{
+    color: rgba(255, 255, 255, 0.534);
+    
+}
+
+footer{
+    background-color: black;
+    position: relative;
+}
+
+footer::before{
+    content: "";
+    background-image: url(/img/detalhe.svg);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 340px;
+    top: -60px;
+}
+
+.contato{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-top: 100px;
+    
+}
+
+.contato p {
+    max-width: 45ch;
+    font-size: 1.54rem;
+    color: white;
+    place-self: center;
+    
+}
+
+
+.contato-lista p {
+    color: white;
+    font-size: 2.2rem;
+    padding-left: 50px;
+    font-family: firesans bol;
+}
+
+.contato-lista a{
+    color: white;
+    font-size: 2.2rem;
+    padding-left: 40px;
+    font-family: firesans bol;
+}
+
+#rodape{
+    font-size: 1.1rem;
+    padding: 10px 0px 50px 0px;
+    color: #ffffff8a;
+}
+
+@media (max-width:1000px){
+    .introducao-funcao h1{
+        font-size: 3rem;
+    }
+
+    .experiencia{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width:800px){
+    body{
+        padding: 0px 0px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        
+    }
+
+    .introducao{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .introducao-funcao h1{
+        font-size: 2rem;
+    }
+
+    .introducao-funcao h1::before{
+        width: 400px;
+        height: 50px;
+    }
+
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 20px;
+  
+    }
+
+    .titulo{
+        font-size: 3rem;
+        max-width: 100%;
+        color: black;
+        text-transform: none;
+    }
+
+    .formacao{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding:30px 20px 0px 20px
+    }
+
+    .titulo-form{
+        font-size: 3rem;
+        max-width: 100%;
+        color: rgb(255, 255, 255);
+        text-transform: none;
+    }
+
+    .formacao-avancado h2::before{
+        top: -30px;
+        left: 0px;
+    }
+
+    .formacao-idioma h2::before{
+        top: -30px;
+        left: 0px;
+    }
+
+    .quadro{
+        flex-wrap: wrap;
+    }
+
+    .contato{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0px 20px;
+        padding-top: 60px;
+    }
+
+    .contato p {
+        place-self: start;
+        max-width: 100%;
+    }
+
+    .contato-lista p{
+        padding-left: 0px;
+        font-size: 1.5rem;
+    }
+
+    .contato-lista a{
+        padding-left: 0px;
+        font-size: 1.5rem;
+    }
+
+    footer::before{
+        display: none;
+    }
+
+
+} 
+@media (max-width:400px){
+
+    .introducao img {
+        display: none;
+    }
+
+    .introducao-funcao{
+        padding-left: 20px;
+    }
+
+    .experiencia-proj{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
